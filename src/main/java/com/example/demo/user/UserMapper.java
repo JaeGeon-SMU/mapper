@@ -8,7 +8,7 @@ import org.mapstruct.factory.Mappers;
 public interface UserMapper {
     UserMapper INSTANCE = Mappers.getMapper(UserMapper.class);
 
-    @Mapping(source = "wrongField", target = "name")  // wrongField 없음!
+    //@Mapping(source = "wrongField", target = "name")  // wrongField 없음!
     UserDto toDto(User user);
     User toEntity(UserDto dto);
 }
