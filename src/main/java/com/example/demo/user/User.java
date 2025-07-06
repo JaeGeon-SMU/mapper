@@ -1,9 +1,11 @@
-public class User {
+package com.example.demo.user;
+
+public class User {  // class여야 함 (interface 아님)
     private String name;
     private String email;
     private int age;
 
-    // 생성자
+    // 기본 생성자 필수!
     public User() {}
 
     public User(String name, String email, int age) {
